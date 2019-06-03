@@ -9,7 +9,8 @@ class Belajar extends CI_Controller {
 	}
 
 	public function index(){
-		echo "ini method index pada controller belajar";
+    $orang['nama'] = "Iqbal";
+    $this -> load->view('view_belajar', $orang);
 	}
 
 	public function hai(){
